@@ -1,0 +1,179 @@
+{
+    "expertises": {
+        "pageTitle": "Nos savoir-faire",
+        "intro": {
+            "title": "Notre approche",
+            "text": "Les technologies sont des moyens, des facilitateurs et des déclencheurs de transformations et de puissants leviers de développement et d'innovations. Elles nécessitent d'être analysées à l'aune de vos enjeux et de votre stratégie afin d'être pleinement appropriée. Leur adoption et leur intégration doivent se faire dans un cadre d'architecture permettant de maîtriser les impacts techniques, organisationnels, humains et financiers."
+        },
+        "domainsTitle": "Nos domaines d'expertise",
+        "items": [
+            {
+                "id": "1",
+                "title": "Stratégie IT",
+                "content": "Alignement de vos stratégies IT (DATA, ERP, ...) avec les perspectives d'évolutions de l'activité de votre structure et de son écosystème. Nous analysons votre contexte métier pour garantir que vos systèmes d'information soutiennent efficacement vos objectifs stratégiques et votre croissance.\n\nDéfinition des référentiels structurants et leurs modes de gouvernance. Nous élaborons des cadres de référence solides qui standardisent vos processus IT et établissons des règles claires pour la prise de décision et la gestion des systèmes.\n\nTransformation organisationnelle. Nous vous accompagnons dans la refonte de vos structures organisationnelles pour les adapter aux nouveaux enjeux digitaux, en tenant compte de l'aspect humain et des résistances au changement."
+            },
+            {
+                "id": "2",
+                "title": "Architecture IT",
+                "content": "Architecture d'entreprise, applicative et de données. Nous concevons des architectures robustes qui alignent systèmes informatiques, processus métiers et stratégie globale, garantissant cohérence et performance de votre écosystème IT.\n\nOnprem / Cloud / Hybrid. Nous vous guidons dans le choix et l'implémentation de solutions adaptées à vos besoins, qu'elles soient sur site, dans le cloud ou hybrides, en tenant compte des contraintes de sécurité, performance et coût.\n\nMove to Cloud. Nous orchestrons votre migration vers le cloud en minimisant les risques et perturbations, tout en maximisant les bénéfices liés à la flexibilité, l'évolutivité et l'optimisation des coûts."
+            },
+            {
+                "id": "3",
+                "title": "Analyse de donnée",
+                "content": "Audit applicatif. Nous évaluons en profondeur vos applications existantes pour identifier les forces, faiblesses et opportunités d'amélioration, vous aidant à prendre des décisions éclairées sur l'évolution de votre patrimoine applicatif.\n\nAnalyse des flux. Nous cartographions et optimisons les flux de données entre vos systèmes pour éliminer les redondances, réduire les latences et améliorer la fiabilité de vos échanges d'information.\n\nDéfinition de Référentiel MDM. Nous établissons une gestion centralisée de vos données de référence (Master Data Management) pour garantir leur unicité, cohérence et fiabilité à travers tous vos systèmes.\n\nModélisation Data. Nous concevons des modèles de données adaptés à vos besoins métiers, facilitant l'exploitation et l'analyse de vos données, tout en préparant le terrain pour l'intelligence artificielle et le machine learning.\n\nAnalyse des Pain Points. Nous identifions et adressons les points de friction dans vos processus et systèmes pour améliorer l'expérience utilisateur et l'efficacité opérationnelle."
+            }
+        ]
+    },
+    "services": {
+        "pageTitle": "Comment allons-nous procéder ?",
+        "intro": {
+            "text": "Les technologies sont des moyens, des facilitateurs et des déclencheurs de transformations et de puissants leviers de développement et d'innovations. Elles nécessitent d'être analysées à l'aune de vos enjeux et de votre stratégie afin d'être pleinement appropriée. Leur adoption et leur intégration doivent se faire dans un cadre d'architecture permettant de maîtriser les impacts techniques, organisationnels, humains et financiers."
+        },
+        "steps": [
+            {
+                "id": "1",
+                "title": "Cadrage du projet et du besoin",
+                "content": "Cadrage des objectifs et du périmètre du projet. Identification résultats attendus du changement. Choix des parties prenantes du projet. Budget prévisionnel du projet. Planification du projet."
+            },
+            {
+                "id": "2",
+                "title": "Vision globale et état des lieux du SI",
+                "content": "Etat des lieux de l'architecture SI et audit du SI et les applicatifs DATA existants. Stratégie et culture actuelle du SI. Diagnostic et audit organisationnel de la DSI. Diagnostic organisationnel, des processus et des méthodes. Evaluation de la dette SI."
+            },
+            {
+                "id": "3",
+                "title": "Evolution du SI Projet cible",
+                "content": "Définition du projet cible DATA/ BI (Stratégie, Métier, Applicatif et Infrastructures IT). Accompagnement à l'expression des besoins utilisateurs. Accompagnement à l'évolution des usages, processus et des pratiques. Choix et mise en place d'outils « référentiels d'architecture » et les standards de modélisation. Accompagnement au changement."
+            },
+            {
+                "id": "4",
+                "title": "Plan de transformation SI",
+                "content": "Définition de la trajectoire et de la feuille de route (étapes, livrables, ressources, Planning, Budget). Mise en place des indicateurs de pilotage de la transformation. Pilotage des risques liés à la transformation. Mise en place de la gouvernance. Maîtrise du Run."
+            }
+        ],
+        "zone": {
+            "title": "Zone d'intervention",
+            "text": "RIM Conseil intervient sur l'ensemble du territoire français et au Maroc. Nous proposons nos services de conseil en systèmes d'information aux entreprises et organismes publics dans ces zones géographiques."
+        }
+    },
+    "equipe": {
+        "title": "Notre équipe",
+        "description": "Rim'conseil évolue avec Jean-Philippe Robin, intervenant au service de votre entreprise et Loubna Berrado-Robin, Consultante en organisation et en transformation numérique.",
+        "members": [
+            {
+                "name": "Jean-Philippe Robin",
+                "role": "Consultant en organisation et en transformation numérique",
+                "bio": [
+                    "Mes expériences passées, à la fois en tant que consultant et manager d'un Département Data et Digital au sein d'une direction de la transformation, me permettent de savoir bien connecter Business, Data et Digital.",
+                    "En comprenant le business model de mes clients, leur stratégie, leur organisation et leur écosystème, je suis en mesure de mettre en place des stratégies applicatives qui permettent d'allier ce qu'il est utile de faire avec ce qu'il est possible de faire (humainement et techniquement) et d'accompagner et mobiliser les personnes."
+                ],
+                "email": "info@rimconseil.fr",
+                "phone": "(FR) 06 11 70 90 16",
+                "linkedin": "#",
+                "image": "intervenant1"
+            },
+            {
+                "name": "Loubna Berrado-Robin",
+                "role": "Consultante en organisation et en transformation numérique",
+                "bio": [
+                    "Études et méthodologies : analyse des projets et proposition de méthodes d'accompagnement adaptées.",
+                    "Audit organisationnel et SI : diagnostic des points faibles et des leviers, évaluation des outils et usages SI, analyse des processus métiers.",
+                    "Transformation numérique : définition du SI cible (stratégie, métier, applicatif), recueil des besoins utilisateurs, modélisation des processus cibles, accompagnement au changement.",
+                    "Plan de transformation SI : élaboration de la feuille de route, rédaction de cahiers des charges et de spécifications fonctionnelles.",
+                    "Mise en œuvre de solutions IT : aide au choix des outils, réalisation des plans de tests, accompagnement à la recette et à la formation des utilisateurs."
+                ],
+                "email": "loubna@rimconseil.fr",
+                "phone": "(FR) 06 01 02 03 04",
+                "linkedin": "#",
+                "image": "intervenant1"
+            }
+        ]
+    },
+    "valeurs": {
+        "title": "Nos valeurs",
+        "description": "L'objectif, c'est de fournir du conseil pour des solutions IT responsables qui allient :",
+        "items": [
+            {
+                "title": "Valeurs Sociales",
+                "icon": "UsersThree",
+                "image": "https://placehold.co/600x400?text=Valeurs+Sociales",
+                "content": "Placer l'humain au cœur du processus de transformation : (écoute, implication, co-construction, acteurs du changement). Protéger des données individuelles."
+            },
+            {
+                "title": "Valeurs écologiques",
+                "icon": "Leaf",
+                "image": "https://placehold.co/600x400?text=Valeurs+Ecologiques",
+                "content": "Infrastructures et équipements responsables (longévité, réparabilité, évolutivité). Gestion sobre des données (collecte optimisée, conservation raisonnée). Optimisation des flux pour réduire l'empreinte énergétique. Conformité réglementaire sur la durée de vie des données."
+            },
+            {
+                "title": "Innovation et pratiques agiles",
+                "icon": "Lightbulb",
+                "image": "https://placehold.co/600x400?text=Innovation",
+                "content": "Des architectures IT évolutives. Approches Data centric. Approches agiles et collaboratives."
+            }
+        ]
+    },
+    "home_expertises": {
+        "title": "Nos domaines d'expertise",
+        "description": "Nous vous accompagnons sur l'ensemble de vos projets de transformation numérique.",
+        "items": [
+            {
+                "title": "Stratégie IT",
+                "icon": "Strategy",
+                "content": "Alignement stratégique, gouvernance et transformation organisationnelle pour soutenir votre croissance."
+            },
+            {
+                "title": "Architecture IT",
+                "icon": "TreeStructure",
+                "content": "Conception d'architectures robustes, choix de solutions (Onprem/Cloud) et pilotage des migrations."
+            },
+            {
+                "title": "Analyse de donnée",
+                "icon": "MagnifyingGlass",
+                "content": "Audit, optimisation des flux, MDM et valorisation de vos données pour une prise de décision éclairée."
+            }
+        ]
+    },
+    "enjeux": {
+        "title": "Vos Enjeux",
+        "description": "Nous comprenons les défis auxquels vous êtes confrontés et construisons avec vous les réponses adaptées.",
+        "items": [
+            {
+                "title": "Transformation Digitale",
+                "description": "Adapter votre organisation aux nouveaux usages et modèles économiques pour rester compétitif.",
+                "buttonText": "En savoir plus",
+                "buttonLink": "/enjeux"
+            },
+            {
+                "title": "Cybersécurité",
+                "description": "Protéger vos actifs numériques et garantir la confidentialité de vos données face aux menaces.",
+                "buttonText": "Sécuriser",
+                "buttonLink": "/enjeux"
+            },
+            {
+                "title": "Valorisation Data",
+                "description": "Transformer vos données brutes en informations stratégiques pour éclairer vos décisions.",
+                "buttonText": "Valoriser",
+                "buttonLink": "/enjeux"
+            },
+            {
+                "title": "Numérique Responsable",
+                "description": "Concilier performance technologique et impact environnemental et social positif.",
+                "buttonText": "S'engager",
+                "buttonLink": "/enjeux"
+            },
+            {
+                "title": "Performance Opérationnelle",
+                "description": "Optimiser vos processus et outils pour gagner en efficacité et réduire vos coûts.",
+                "buttonText": "Optimiser",
+                "buttonLink": "/enjeux"
+            },
+            {
+                "title": "Conduite du Changement",
+                "description": "Accompagner vos équipes dans l'adoption des nouveaux outils et méthodes de travail.",
+                "buttonText": "Accompagner",
+                "buttonLink": "/enjeux"
+            }
+        ]
+    }
+}

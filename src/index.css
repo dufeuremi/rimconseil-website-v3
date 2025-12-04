@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono&display=swap');
+
+:root {
+  /* --- Interface Colors --- */
+  --color-primary: #2C77E3;
+  --color-primary-light: #77AFFE;
+  --color-secondary: #1E2837;
+  /* Dark Navy */
+  --color-tertiary: #6B7A8E;
+  /* Gray Blue */
+  --color-quaternary: #D9E2EC;
+  /* Light Blue Gray */
+
+  /* --- Illustration/Theme Colors --- */
+  --color-green: #2E8B57;
+  --color-mint: #3CB371;
+  --color-olive: #9AB973;
+  --color-taupe: #A08679;
+  --color-sand: #C5BC8E;
+
+  /* --- Extended Palette --- */
+  --color-dark-green: #386641;
+  --color-medium-green: #6A994E;
+  --color-light-green: #A7C957;
+  --color-beige: #F2E8CF;
+
+  /* --- Base Colors --- */
+  --color-background: #FFFFFF;
+  --color-text: var(--color-secondary);
+  --color-text-light: var(--color-tertiary);
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-accent: #C41E3A;
+  /* Kept from previous if needed, or derived */
+
+  /* --- Typography --- */
+  --font-primary: 'Work Sans', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+
+  /* --- Spacing & Layout --- */
+  --spacing-unit: 1rem;
+  --border-radius: 4px;
+  /* Slightly rounded looks better than 0px usually, but user had 0px. Let's stick to 0px if they want strict, but I'll set to 4px for "improved" feel unless they insisted on 0. They had 0px in root. I'll keep 0px to respect their snippet but maybe 4px for inputs? The snippet had 0px. I'll stick to 0px for now to be safe. */
+  --border-radius: 0px;
+
+  /* --- Shadows (Softer/Diffuse) --- */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  /* line-height removed */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--color-secondary);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--color-primary-light);
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* --- Form Elements --- */
+input,
+textarea,
+select {
+  background-color: #F8FAFC;
+  border: 1px solid var(--color-quaternary);
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  max-width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(44, 119, 227, 0.1);
+}
+
+/* --- Utilities --- */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  /* Standard wide container */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-tertiary);
+  border-radius: var(--border-radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* --- Cursor Utilities --- */
+.cursor-pointer,
+[role="button"],
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+}
