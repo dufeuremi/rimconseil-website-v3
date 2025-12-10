@@ -28,7 +28,6 @@ const imageMap: Record<string, string> = {
 };
 
 const HeroSection = styled.section`
-  height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${heroBg});
   background-size: cover;
@@ -40,11 +39,13 @@ const HeroSection = styled.section`
   text-align: left;
   padding: 0;
   margin-top: -100px;
-  padding-top: 200px;
+  padding-top: 400px;
+  padding-bottom: 200px;
 
   @media (max-width: 768px) {
     margin-top: -80px;
-    padding-top: 150px;
+    padding-top: 250px;
+    padding-bottom: 100px;
   }
 `;
 
@@ -491,12 +492,29 @@ export default function Home() {
   const [valuesData, setValuesData] = useState<any>(null);
   const [homeExpertisesData, setHomeExpertisesData] = useState<any>(null);
   const [enjeuxData, setEnjeuxData] = useState<any>(null);
+  const [heroData, setHeroData] = useState<any>({
+    pre_title: "Conseil et accompagnement d'entreprise",
+    title: "Piloter l'IT avec sens.",
+    subtitle: "Votre partenaire pour co-construire vos solutions IT responsables qui allient innovation et respect des valeurs écologiques et sociales",
+    button_text: "Voir les services",
+    button_link: "/services"
+  });
   const [currentEnjeuIndex, setCurrentEnjeuIndex] = useState(0);
   const [newsData, setNewsData] = useState<any[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        // Fetch Hero Data
+        try {
+          const heroRecord = await pb.collection('pages').getFirstListItem('url="home_hero"');
+          if (heroRecord && heroRecord.content) {
+            setHeroData(typeof heroRecord.content === 'string' ? JSON.parse(heroRecord.content) : heroRecord.content);
+          }
+        } catch (e) {
+          console.log("Hero data not found, using default");
+        }
+
         // Fetch Values
         const valuesRecord = await pb.collection('pages').getFirstListItem('url="valeurs"');
         if (valuesRecord && valuesRecord.content) {
@@ -560,13 +578,13 @@ export default function Home() {
     <>
       <HeroSection>
         <HeroContent>
-          <PreTitle>Conseil et accompagnement d'entreprise</PreTitle>
-          <HeroTitle>Piloter l'IT avec sens.</HeroTitle>
+          <PreTitle>{heroData.pre_title}</PreTitle>
+          <HeroTitle>{heroData.title}</HeroTitle>
           <HeroSubtitle>
-            Votre partenaire pour co-construire vos solutions IT responsables qui allient innovation et respect des valeurs écologiques et sociales
+            {heroData.subtitle}
           </HeroSubtitle>
-          <CTAButton to="/services">
-            Voir les services
+          <CTAButton to={heroData.button_link}>
+            {heroData.button_text}
             <ArrowRight weight="bold" />
           </CTAButton>
         </HeroContent>
@@ -671,18 +689,34 @@ export default function Home() {
         <PartnersContent>
           <PartnersTitle>Nos partenaires</PartnersTitle>
           <LogosGrid>
-            <PartnerLogo src={bevoak} alt="Bevoak" />
-            <PartnerLogo src={blocnet} alt="Blocnet" />
-            <PartnerLogo src={colibee} alt="Colibee" />
-            <PartnerLogo src={parteam} alt="Parteam" />
-            <PartnerLogo src={polynom} alt="Polynom" />
-            <PartnerLogo src={excelcio} alt="Excelcio" />
+            <a href="https://www.bevoak.com" target="_blank" rel="noopener noreferrer">
+              <PartnerLogo src={bevoak} alt="Bevoak" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <PartnerLogo src={blocnet} alt="Blocnet" />
+            </a>
+            <a href="https://www.colibee.com" target="_blank" rel="noopener noreferrer">
+              <PartnerLogo src={colibee} alt="Colibee" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <PartnerLogo src={parteam} alt="Parteam" />
+            </a>
+            <a href="https://www.polynom.com" target="_blank" rel="noopener noreferrer">
+              <PartnerLogo src={polynom} alt="Polynom" />
+            </a>
+            <a href="https://www.excelcio.com" target="_blank" rel="noopener noreferrer">
+              <PartnerLogo src={excelcio} alt="Excelcio" />
+            </a>
           </LogosGrid>
 
           <PartnersTitle style={{ marginTop: '6rem' }}>Ils nous font confiance</PartnersTitle>
           <LogosGrid>
-            <PartnerLogo src={client1} alt="Client 1" />
-            <PartnerLogo src={client2} alt="Client 2" />
+            <a href="https://www.groupeleduff.com" target="_blank" rel="noopener noreferrer">
+              <PartnerLogo src={client1} alt="Groupe Le Duff" />
+            </a>
+            <a href="https://www.lactalis.com" target="_blank" rel="noopener noreferrer">
+              <PartnerLogo src={client2} alt="Lactalis" />
+            </a>
           </LogosGrid>
         </PartnersContent>
       </PartnersContainer>

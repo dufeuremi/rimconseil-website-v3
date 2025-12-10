@@ -69,22 +69,38 @@ export default function Reseau() {
       <PartnersSection>
         <PartnersTitle>Nos partenaires</PartnersTitle>
         <LogosGrid>
-          <PartnerLogo src={bevoak} alt="Bevoak" />
-          <PartnerLogo src={blocnet} alt="Blocnet" />
-          <PartnerLogo src={colibee} alt="Colibee" />
-          <PartnerLogo src={parteam} alt="Parteam" />
-          <PartnerLogo src={polynom} alt="Polynom" />
-          <PartnerLogo src={excelcio} alt="Excelcio" />
+          <a href="https://www.bevoak.com" target="_blank" rel="noopener noreferrer">
+            <PartnerLogo src={bevoak} alt="Bevoak" />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <PartnerLogo src={blocnet} alt="Blocnet" />
+          </a>
+          <a href="https://www.colibee.com" target="_blank" rel="noopener noreferrer">
+            <PartnerLogo src={colibee} alt="Colibee" />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <PartnerLogo src={parteam} alt="Parteam" />
+          </a>
+          <a href="https://www.polynom.com" target="_blank" rel="noopener noreferrer">
+            <PartnerLogo src={polynom} alt="Polynom" />
+          </a>
+          <a href="https://www.excelcio.com" target="_blank" rel="noopener noreferrer">
+            <PartnerLogo src={excelcio} alt="Excelcio" />
+          </a>
         </LogosGrid>
       </PartnersSection>
 
       <PartnersSection>
         <PartnersTitle>Ils nous font confiance</PartnersTitle>
         <LogosGrid>
-          <PartnerLogo src={client1} alt="Client 1" />
-          <PartnerLogo src={client2} alt="Client 2" />
+          <a href="https://www.groupeleduff.com" target="_blank" rel="noopener noreferrer">
+            <PartnerLogo src={client1} alt="Groupe Le Duff" />
+          </a>
+          <a href="https://www.lactalis.com" target="_blank" rel="noopener noreferrer">
+            <PartnerLogo src={client2} alt="Lactalis" />
+          </a>
         </LogosGrid>
       </PartnersSection>
-    </PageContainer>
+    </PageContainer >
   );
 }

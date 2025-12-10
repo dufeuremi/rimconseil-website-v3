@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import PageContainer from '../components/PageContainer';
-import { LinkedinLogo, EnvelopeSimple, Phone } from '@phosphor-icons/react';
+import { LinkedinLogo, EnvelopeSimple, Phone, User } from '@phosphor-icons/react';
 import intervenant1 from '../assets/intervenant1.png';
 import pb from '../lib/pocketbase';
 
@@ -155,7 +155,7 @@ const defaultTeamData = {
       email: "loubna@rimconseil.fr",
       phone: "(FR) 06 01 02 03 04",
       linkedin: "#",
-      image: "intervenant1"
+      image: "placeholder"
     }
   ]
 };
@@ -190,7 +190,11 @@ export default function Equipe() {
         {data.members.map((member, index) => (
           <TeamCard key={index}>
             <MemberImage>
-              <img src={imageMap[member.image] || member.image} alt={member.name} />
+              {member.image === "placeholder" ? (
+                <User size={80} color="white" weight="duotone" />
+              ) : (
+                member.image && <img src={imageMap[member.image] || member.image} alt={member.name} />
+              )}
             </MemberImage>
             <MemberInfo>
               <MemberName>{member.name}</MemberName>
