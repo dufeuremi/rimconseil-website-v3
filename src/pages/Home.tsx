@@ -251,6 +251,10 @@ const CarouselContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 2rem;
+
+  @media (max-width: 768px) {
+    gap: 0.5rem;
+  }
 `;
 
 const CarouselButton = styled.button`
@@ -267,6 +271,11 @@ const CarouselButton = styled.button`
   transition: all 0.2s;
   backdrop-filter: blur(4px);
 
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+
   &:hover {
     background: rgba(255, 255, 255, 0.4);
     transform: scale(1.1);
@@ -276,7 +285,7 @@ const CarouselButton = styled.button`
 const CarouselTrack = styled.div`
   display: flex;
   gap: 2rem;
-  width: 100%;
+  flex: 1;
   max-width: 900px;
 `;
 
@@ -500,6 +509,7 @@ export default function Home() {
     button_link: "/services"
   });
   const [currentEnjeuIndex, setCurrentEnjeuIndex] = useState(0);
+  const [itemsPerPage, setItemsPerPage] = useState(window.innerWidth < 768 ? 1 : 2);
   const [newsData, setNewsData] = useState<any[]>([]);
 
   useEffect(() => {
@@ -560,17 +570,24 @@ export default function Home() {
       }
     };
     fetchData();
+
+    const handleResize = () => {
+      setItemsPerPage(window.innerWidth < 768 ? 1 : 2);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const nextEnjeux = () => {
     if (enjeuxData && enjeuxData.items) {
-      setCurrentEnjeuIndex((prev) => (prev + 2) % enjeuxData.items.length);
+      setCurrentEnjeuIndex((prev) => (prev + itemsPerPage) % enjeuxData.items.length);
     }
   };
 
   const prevEnjeux = () => {
     if (enjeuxData && enjeuxData.items) {
-      setCurrentEnjeuIndex((prev) => (prev - 2 + enjeuxData.items.length) % enjeuxData.items.length);
+      setCurrentEnjeuIndex((prev) => (prev - itemsPerPage + enjeuxData.items.length) % enjeuxData.items.length);
     }
   };
 
@@ -635,7 +652,7 @@ export default function Home() {
                 <CaretLeft size={24} weight="bold" />
               </CarouselButton>
               <CarouselTrack>
-                {enjeuxData.items.slice(currentEnjeuIndex, currentEnjeuIndex + 2).map((item: any, index: number) => (
+                {enjeuxData.items.slice(currentEnjeuIndex, currentEnjeuIndex + itemsPerPage).map((item: any, index: number) => (
                   <EnjeuCard key={index}>
                     <EnjeuCardTitle>{item.title}</EnjeuCardTitle>
                     <EnjeuCardDesc>{item.description}</EnjeuCardDesc>

@@ -7,6 +7,10 @@ const LogoImg = styled.img`
   height: 60px;
   width: auto;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 768px) {
+    height: 40px;
+  }
 `;
 
 const FooterContainer = styled.footer`

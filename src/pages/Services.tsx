@@ -115,6 +115,11 @@ const ZoneSection = styled.div`
   align-items: center;
   gap: 2rem;
 
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -141,6 +146,10 @@ const ZoneTitle = styled.h2`
   font-size: 2rem;
   margin: 0;
   color: white;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const ZoneText = styled.p`
@@ -154,9 +163,16 @@ const ZoneText = styled.p`
 const MapImage = styled.img`
   height: 400px;
   width: auto;
+  max-width: 100%;
   margin-bottom: 1rem;
   filter: brightness(0) invert(1);
   opacity: 0.7;
+
+  @media (max-width: 768px) {
+    height: auto;
+    width: 80%;
+    max-height: 300px;
+  }
 `;
 
 const ZoneContent = styled.div`

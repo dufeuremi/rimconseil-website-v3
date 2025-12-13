@@ -8,7 +8,7 @@ const PageContainer = styled.div`
   padding-top: 130px; /* Reduced spacing */
 
   @media (max-width: 768px) {
-    padding: 120px 2rem 0;
+    padding: 120px 1rem 0;
   }
 `;
 

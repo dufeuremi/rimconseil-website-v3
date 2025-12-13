@@ -72,6 +72,10 @@ const SocialLink = styled.a<{ $isScrolled: boolean; $isHome: boolean }>`
   &:hover {
     color: #0077b5; /* LinkedIn Blue */
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const MenuButton = styled.button<{ $isScrolled: boolean; $isHome: boolean }>`
